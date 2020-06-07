@@ -10,28 +10,53 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    html {width: 1920px; height: 1080px;}
+    * {
+      padding: 0;
+      margin:0;
+    }
+    html {
+      height: 100vh;
+      width: 100vw;
+    }
     body {
-      background-image: url(bg-desktop.svg);
+      height: 100%;
+      width: 100%;
+      background-color: hsl(229, 57%, 11%);
+      background-image: url("bg-desktop.svg");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 100% 50%;
+      background-position: bottom;
     }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .border {
+      width: 100px;
+      border-style: dashed;
+    }
+    .content {
+      height: 400px;
+      width: 70%;
+      margin-top: 27%;
+      margin-left: 17%;
+      border-style: solid;
+      border-color: red;
+
+    }
   </style>
 </head>
 <body>
-
+  <div class="content">
+    <div class="border"></div>
   You’ve used 815 GB of your storage
 
   185 GB Left
 
   0 GB
   1000 GB
-
+</div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Mat10tj</a>.
   </div>
 </body>
 </html>
