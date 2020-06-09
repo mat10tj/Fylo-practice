@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Fylo data storage component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -14,12 +14,13 @@
       padding: 0;
       margin:0;
     }
+
     html {
       height: 100vh;
       width: 100vw;
     }
+
     body {
-      height: 100%;
       width: 100%;
       background-color: hsl(229, 57%, 11%);
       background-image: url("bg-desktop.svg");
@@ -27,26 +28,40 @@
       background-size: 100% 50%;
       background-position: bottom;
     }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    .border {
-      width: 100px;
-      border-style: dashed;
-    }
-    .content {
-      height: 400px;
-      width: 70%;
-      margin-top: 27%;
-      margin-left: 17%;
-      border-style: solid;
-      border-color: red;
 
+    .border {
+      width: 400px;
+      height: 210px;
+      /* border-style: solid; */
+      background-color: hsl(228, 56%, 26%);
+      border-top-right-radius: 110px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+
+    .content {
+      height: 200px;
+      width: 70%;
+      margin-top: 40vh;
+      margin-left: 17%;
+      /* border-style: solid;
+      border-color: red; */
+    }
+    .fylo {
+      font-family: 'Raleway', sans-serif;
+      color: white;
     }
   </style>
 </head>
 <body>
   <div class="content">
-    <div class="border"></div>
+    <div class="border">
+      <h1 class="fylo">Fylo</h1>
+    </div>
   You’ve used 815 GB of your storage
 
   185 GB Left
