@@ -33,7 +33,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
 
     .border {
-      width: 400px;
+      width: 360px;
       height: 210px;
       /* border-style: solid; */
       background-color: hsl(228, 56%, 26%);
@@ -41,6 +41,7 @@
       border-bottom-right-radius: 10px;
       border-bottom-left-radius: 10px;
       border-top-left-radius: 10px;
+      /* box-shadow: 1px 1px 1px 1px black; */
     }
 
     .content {
@@ -55,12 +56,27 @@
       font-family: 'Raleway', sans-serif;
       color: white;
     }
+    .logo {
+      padding-top: 40px;
+      padding-left: 40px;
+    }
+    .icon-row {
+      padding-left: 70px;
+      padding-top: 40px;
+    }
+    .icons {
+      background-color: blue;
+    }
   </style>
 </head>
 <body>
   <div class="content">
     <div class="border">
-      <h1 class="fylo">Fylo</h1>
+      <img class="logo"src="logo.svg"></img>
+      <div class="icon-row">
+        <img class="icons" src="icon-document.svg"> <img class="icons" src="icon-folder.svg">
+        <img class="icons" src="icon-upload.svg">
+      </div>
     </div>
   You’ve used 815 GB of your storage
 
