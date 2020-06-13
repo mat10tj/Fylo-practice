@@ -33,8 +33,8 @@
     .attribution a { color: hsl(228, 45%, 44%); }
 
     .border {
-      width: 360px;
-      height: 210px;
+      width: 340px;
+      height: 200px;
       /* border-style: solid; */
       background-color: hsl(228, 56%, 26%);
       border-top-right-radius: 110px;
@@ -51,6 +51,7 @@
       margin-left: 17%;
       /* border-style: solid;
       border-color: red; */
+      align-items: center;
     }
     .fylo {
       font-family: 'Raleway', sans-serif;
@@ -61,13 +62,44 @@
       padding-left: 40px;
     }
     .icon-row {
-      padding-left: 50px;
-      padding-top: 40px;
-      background-color: dark blue;
+      padding-left: 40px;
+      padding-top: 30px;
+      /* background-color: blue; */
+      display: flex;
+      align-items: center;
     }
-    .icon-row icon2{
+    .icon1 {
+      background-color: hsl(229, 57%, 11%);
+      height: 33px;
+      width: 30px;
+      border-radius: 10px;
+      padding-left: 11px;
+      padding-top: 10px;
+    }
+    .icon2 {
+      background-color: hsl(229, 57%, 11%);
+      height: 31px;
+      width: 29px;
+      padding-left: 10px;
+      padding-top: 12px;
+      padding-right: 5px;
+      border-radius: 10px;
+      margin-left: 12px;
+    }
+    .icon3 {
+      background: hsl(229, 57%, 11%);
+      height: 28px;
+      width: 33px;
+      padding-top: 14px;
+      padding-left: 9px;
+      border-radius: 10px;
+      margin-left: 10px;
+    }
+    .store {
+      background-color: orange;
 
     }
+
   </style>
 </head>
 <body>
@@ -75,16 +107,20 @@
     <div class="border">
       <img class="logo"src="logo.svg"></img>
       <div class="icon-row">
-        <img class="icon1" src="icon-document.svg"> <img class="icon2" src="icon-folder.svg">
-        <img class="icon3" src="icon-upload.svg">
+        <div class="icon1"><img src="icon-document.svg"></div>
+        <div class="icon2"><img src="icon-folder.svg"></div>
+        <div class="icon3"><img src="icon-upload.svg"></div>
       </div>
     </div>
+
+  <div class="store">
   You’ve used 815 GB of your storage
 
   185 GB Left
 
   0 GB
   1000 GB
+  </div>
 </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
@@ -92,3 +128,4 @@
   </div>
 </body>
 </html>
+      <!-- background-color: hsl(229, 57%, 11%); -->
