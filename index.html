@@ -127,19 +127,23 @@
     .bar {
       width: 35rem;
       background-color: black;
-      height: 13px;
+      height: 17px;
       border-radius: 20px;
       margin-left: 4px;
       margin-top: 12px;
-      align-content: center;
+      display: flex;
+      align-items:center;
     }
     .innerBar {
-      margin-left: 1px;
-      margin-top: 3px;
+      margin-left: 2px;
       background-color: blue;
       width: 25rem;
-      height: 9px;
-      border-radius: 19px;
+      height: 11px;
+      border-radius: 20px;
+    }
+    .numB p{
+      display: flex;
+      align-content: space-around;
     }
   </style>
 </head>
@@ -160,9 +164,10 @@
       <div class="innerBar"></div>
     </div>
   185 GB Left
-
-  0 GB
-  1000 GB
+<div class="NumB">
+  <p>0 GB
+  1000 GB<p>
+  <div>
   </div>
 </div>
 </div>
