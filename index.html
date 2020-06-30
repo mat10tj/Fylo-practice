@@ -30,8 +30,14 @@
       background-position: bottom;
     }
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 200px;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
 
     .border {
       width: 350px;
@@ -126,7 +132,7 @@
 
     .bar {
       width: 34.5rem;
-      background-color: black;
+      background-color: hsl(229, 57%, 19%);
       height: 17px;
       border-radius: 20px;
       margin-left: 4px;
@@ -137,12 +143,53 @@
     }
     .innerBar {
       margin-left: 2px;
-      background-color: blue;
+      background-image: linear-gradient(to left, hsl(335, 100%, 65%),hsl(6, 100%, 80%));
       width: 25rem;
       height: 11px;
       border-radius: 20px;
     }
-
+    .ball {
+      background-color: white;
+      height: 10px;
+      width: 10px;
+      margin-left: 24.3rem;
+      border-radius: 20px
+    }
+    .triangle {
+      width: 0px;
+      height: 0px;
+      margin-top: -6rem;
+      margin-left: 400px;
+      border-left: 90px solid transparent;
+      border-right: 60px solid white;
+      border-bottom: 60px solid transparent;
+    }
+    .box {
+      background-color: white;
+      width: 170px;
+      height: 60px;
+      margin-top: -5rem;
+      margin-left: 380px;
+      border-radius: 8px;
+    }
+    .box p {
+      color: black;
+      padding-top: 10px;
+      padding-left: 20px;
+      font-weight: 700;
+      font-family: 'Raleway', sans-serif;
+    }
+    .one {
+      font-size: 30px;
+    }
+    .zero {
+      margin-top: 60px;
+      margin-left: 7px;
+    }
+    .ot {
+      margin-left: 31rem;
+      margin-top: -17px;
+    }
   </style>
 </head>
 <body>
@@ -159,14 +206,13 @@
   <div class="store">
   <p class="text">You’ve used <strong>815 GB</strong> of your storage<p>
     <div class="bar">
-      <div class="innerBar"></div>
+      <div class="innerBar"><div class="ball"></div>
+      </div>
     </div>
-  185 GB Left
-
-  0 GB
-  1000 GB
-
-
+    <div class="triangle"></div>
+    <div class="box"><p><strong class="one">185</strong> GB Left<p></div>
+  <p class="zero">0 GB<p>
+  <p class="ot">1000 GB<p>
 </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
